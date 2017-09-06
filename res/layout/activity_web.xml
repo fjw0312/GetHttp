@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/title">
+        <Button 
+            android:id="@+id/Bn_Pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Pre"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"/>
+        <TextView 
+            android:id="@+id/Tx_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="加载网页"
+            android:textSize="28sp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"/>
+        <Button 
+            android:id="@+id/Bn_Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Next"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+    
+       <EditText 
+        android:id="@+id/Ed_Url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"     
+        android:layout_marginTop="2dp"  
+        android:hint="请输入URL。。。"
+        android:minLines="2"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/my_editview_shape"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#9D853C74"
+        android:layout_marginBottom="4dp">
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <WebView 
+                android:id="@+id/web_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/Bn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="刷新请求"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_red_light"/>
+    
+
+</LinearLayout>
