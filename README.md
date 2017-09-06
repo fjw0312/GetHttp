@@ -3,6 +3,7 @@
 
 
 所用知识：http网络请求（url urlConnection HttpURLConnection HttpClient）、 volley、 MediaPlay、 video、webView、Json解析 等
+
 功能：个人 http 简单的网路请求测试工具。  
 
 测试 url 网络资源请求获取  url.openStream()    eg:网络图片
